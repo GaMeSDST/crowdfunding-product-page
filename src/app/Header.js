@@ -1,4 +1,4 @@
-export default function Header({ onBurger }) {
+export default function Header({ hamburger, onBurger }) {
     return (
         <>
             <div className="w-[100%] h-[300px] bg-cover absolute sm:hidden" style={{ backgroundImage: "url(/image-hero-mobile.jpg)" }}></div>
@@ -8,8 +8,8 @@ export default function Header({ onBurger }) {
                 <div className="w-[128px] h-[20px] sm:ml-4" style={{ backgroundImage: "url(/logo.svg)" }}></div>
                 <div
                     onClick={onBurger}
-                    className="w-[16px] h-[15px] absolute right-0 mt-2 min-[640px]:hidden"
-                    style={{ backgroundImage: "url(/icon-hamburger.svg)" }}
+                    className="w-[16px] h-[15px] absolute right-0 mt-2 min-[640px]:hidden bg-no-repeat"
+                    style={hamburger ? { backgroundImage: "url(/icon-close-menu.svg)" } : { backgroundImage: "url(/icon-hamburger.svg)" }}
                 ></div>
                 <div className="hidden sm:flex gap-8 text-[#fffdff] sm:mr-4">
                     <span className="cursor-pointer">About</span>

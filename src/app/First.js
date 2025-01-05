@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function First({ onPress }) {
-    const [bookmark, useBookmarked] = useState(false);
+    const [bookmark, setBookmarked] = useState(false);
     return (
         <>
             <div className="bg-white min-h-32 relative top-60 mx-6 rounded-lg flex flex-col align-center text-center sm:w-[39rem] sm:mx-auto">
@@ -14,7 +14,7 @@ export default function First({ onPress }) {
                     <button onClick={onPress} className="bg-[#3cb4ab] p-4 rounded-full w-[100%] text-[#f2ffff] font-[700] hover:bg-[#157a74] sm:w-52">
                         Back this project
                     </button>
-                    <button className="w-[56px] h-[56px] sm:w-[11rem] inline-flex items-center" onClick={() => useBookmarked(!bookmark)}>
+                    <button className="w-[56px] h-[56px] sm:w-[11rem] inline-flex items-center" onClick={() => setBookmarked(!bookmark)}>
                         <svg className="z-[2]" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
                                 <circle className={`${bookmark ? "fill-[#0f7d74]" : "hover:fill-[#707070]"}`} fill="#2F2F2F" cx="28" cy="28" r="28" />

@@ -15,7 +15,7 @@ export default function Home() {
     const [contextSucks, setContextSucks] = useState(useContext(ValuesContext));
     return (
         <>
-            <Header onBurger={() => setHamburger(!hamburger)} />
+            <Header onBurger={() => setHamburger(!hamburger)} hamburger={hamburger} />
             {hamburger ? <Hamburger onPress={() => setHamburger(!hamburger)} /> : ""}
             <First onPress={() => setModal(!modal)} />
             <Second left={contextSucks.left} total={contextSucks.total} backed={contextSucks.backed} />

@@ -139,7 +139,7 @@ export default function Modal({ data, onPress, chosen, contextSucks }) {
     return (
         <>
             <div onClick={onPress} className={`w-[100%] h-[100%] fixed inset-0 bg-black opacity-25 z-[3]`}></div>
-            <div className="w-[90%] max-w-[650px] h-[530px] bg-white fixed inset-0 m-auto z-[3] rounded-xl sm:px-4 overflow-y-scroll">
+            <div className="w-[90%] max-w-[650px] h-[530px] bg-white fixed inset-0 m-auto z-[3] rounded-xl sm:px-4 overflow-y-auto">
                 {thanks == false ? (
                     <>
                         <div className="flex flex-row justify-between mx-4 my-6 mb-4 items-center">
