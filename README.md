@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
--   [Solution URL](https://crowdfunding-product-page-mu-weld.vercel.app/)
+-   [Solution URL](https://www.frontendmentor.io/solutions/crowdfunding-product-page-using-reactnexttailwind-v4rU0UUnB6)
 -   [Live Site URL](https://crowdfunding-product-page-mu-weld.vercel.app/)
 
 ## My process
